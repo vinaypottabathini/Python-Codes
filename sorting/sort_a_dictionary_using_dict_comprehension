@@ -1,0 +1,24 @@
+
+dic = {9: 'a', 8: 'b', 7:'c', 6:'d', 5:'e', 4:'f', 3:'g', 2:'h', 1:'i' }
+
+
+## WRONG WAY
+d = sorted(dic.keys())
+dict2 = {}
+for i in d:
+  dict2[i] = dic[i]
+
+print(dict2)
+{1: 'i', 2: 'h', 3: 'g', 4: 'f', 5: 'e', 6: 'd', 7: 'c', 8: 'b', 9: 'a'}
+
+
+
+### SORT A DICTIONARY BASED ON VALUE USING DICT COMPREHENSION
+
+dic = {1: 'i', 2: 'h', 3: 'g', 4: 'f', 5: 'e', 6: 'd', 7: 'c', 8: 'b', 9: 'a'}
+op = {tup[0]:tup[1] for tup in sorted(dic.items(), key=lambda x: x[1])}
+
+#Output:
+{9: 'a', 8: 'b', 7: 'c', 6: 'd', 5: 'e', 4: 'f', 3: 'g', 2: 'h', 1: 'i'}
+
+
