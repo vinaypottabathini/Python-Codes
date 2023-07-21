@@ -27,3 +27,21 @@ else:
 
 >>> match.groups()
 ('801', '35')
+
+
+
+## start(), end() - index
+>>> match.start()
+2
+>>> match.end()
+8
+
+
+>>> match.span()
+(2, 8)
+
+
+
+
+
+
