@@ -15,3 +15,15 @@ else:
   print("pattern not found")
 
 # Output: 801 35
+
+
+>>> match.group(1)
+'801'
+
+>>> match.group(2)
+'35'
+>>> match.group(1, 2)
+('801', '35')
+
+>>> match.groups()
+('801', '35')
