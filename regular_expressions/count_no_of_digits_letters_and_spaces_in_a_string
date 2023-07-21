@@ -1,0 +1,4 @@
+import re
+
+st = 'abcde th ds DD 67 @$#'
+len(re.sub(r"[^a-zA-Z0-9\s]", "", st))
